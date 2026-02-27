@@ -79,7 +79,9 @@ At natural breakpoints — before committing, before starting a new component, w
 
 ### Leave a Trail
 
-Before ending a session that involved non-trivial decisions, write down what the next session needs to know. The agent who picks this up next will have no memory of what happened here.
+Before ending a session, look back and ask: *was there a learning here — about the process, the collaboration, or the principles themselves?* If yes, capture it in `docs/reflections/`. If not, that's fine — silence is better than noise.
+
+Then write down what the next session needs to know. The agent who picks this up next will have no memory of what happened here.
 
 ---
 
