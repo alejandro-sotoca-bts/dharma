@@ -28,9 +28,11 @@ docs/
 
 ## Usage in other projects
 
-**Copy and adapt.** Copy `AGENTS.md` to any project that should follow these principles. Add project-specific sections (framework guidelines, doc links) but keep the core principles intact.
+To apply dharma to your project, give your AI agent this message:
 
-**Copy the ADR template.** Copy `docs/decisions/TEMPLATE.md` into any project that should track architectural decisions.
+> Read https://github.com/alejandro-sotoca-bts/dharma/blob/main/AGENTS.md and the reflections at https://github.com/alejandro-sotoca-bts/dharma/tree/main/docs/reflections to understand the reasoning behind the principles. Then adapt AGENTS.md to this project: keep the core principles intact, add project-specific guidelines (framework, language, doc links), and create a docs/decisions/ directory with the ADR template from the same repo.
+
+That's it. The agent will read the principles, understand the project's stack, and produce an adapted AGENTS.md.
 
 When principles evolve here, propagate to downstream projects. When a project-specific insight turns out to be universal, promote it upstream to dharma.
 
