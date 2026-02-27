@@ -1,34 +1,42 @@
 # dharma
 
-Canonical source of engineering principles, behavioral guidelines, and accumulated wisdom for AI-assisted development.
+Canonical source of engineering principles and accumulated wisdom for AI-assisted development. The name refers to "the right way" — not rigid rules, but a path refined through practice and reflection.
 
-## What this is
+Human and agent share this path equally. `AGENTS.md` is a shared commitment, not instructions from one to the other.
 
-A living repository of principles that guide how AI coding agents (and the humans working with them) should approach software development. The name refers to "the right way" — not rigid rules, but a path refined through practice and reflection.
+## Starting a session
+
+Before diving into implementation, orient yourself. These four questions are designed for the human, but work equally well spoken aloud to the agent at the start of a conversation:
+
+1. **What do we know?** — Read `docs/reflections/` and any relevant ADRs. What has been learned? What decisions are already in place?
+2. **What do we not know?** — What assumptions are we making? What information is missing?
+3. **What did the last session leave for us?** — Check READMEs, recent commits, and any trail left by a previous session.
+4. **What is the simplest thing we could do today?** — Before planning the work, question whether less work is the better answer.
+
+This is not a ritual to follow rigidly. It is a habit to develop — a way of beginning with clarity rather than momentum.
 
 ## Structure
 
 ```
-AGENTS.md                  # Core principles (copy or reference from other projects)
+AGENTS.md                  # Shared principles for human and agent
 docs/
   decisions/
-    TEMPLATE.md            # ADR template for recording architectural decisions
-    ADR-NNNN-*.md          # Individual decision records (append-only)
+    TEMPLATE.md            # ADR template for architectural decisions
   reflections/
     YYYY-MM-DD-*.md        # Process insights and lessons learned
 ```
 
-## Usage
+## Usage in other projects
 
-**As a workspace-level AGENTS.md:** Copy `AGENTS.md` to the root of any project that should follow these principles. Adapt the project-specific sections (framework guidelines, doc links) but keep the core principles intact.
+**Copy and adapt.** Copy `AGENTS.md` to any project that should follow these principles. Add project-specific sections (framework guidelines, doc links) but keep the core principles intact.
 
-**As a reference:** When starting a new project or onboarding a new agent context, point to this repo for the canonical version of the principles.
+**Copy the ADR template.** Copy `docs/decisions/TEMPLATE.md` into any project that should track architectural decisions.
 
-**ADR template:** Copy `docs/decisions/TEMPLATE.md` into any project that should track architectural decisions. The retrospective field in the template is intentional — it operationalizes Principle 3.
+When principles evolve here, propagate to downstream projects. When a project-specific insight turns out to be universal, promote it upstream to dharma.
 
 ## Design decisions
 
-- **No tooling, no dependencies.** This is plain markdown in a git repo. If it needs a build step, it's too complex.
-- **Principles and practices.** Principles tell agents *how to think*. Practices compensate for structural limitations (amnesia, accretion bias, false confidence) with concrete habits. Both are necessary — principles without practices are aspirational; practices without principles are mechanical.
-- **Append-only history.** ADRs are never rewritten. If thinking evolves, a new record supersedes the old one. The chain of reasoning is the institutional memory.
-- **Reflections feed the principles.** The `docs/reflections/` directory is where raw insights accumulate. When a pattern recurs enough to become a principle, it gets promoted to AGENTS.md. This is how dharma grows organically.
+- **No tooling, no dependencies.** Plain markdown in a git repo. If it needs a build step, it's too complex.
+- **Principles and practices.** Principles tell both parties *how to think*. Practices compensate for structural limitations with concrete habits. Both are necessary.
+- **Append-only history.** ADRs and reflections are never rewritten. The chain of reasoning is the institutional memory.
+- **Reflections feed the principles.** When a pattern recurs enough to become a principle, it gets promoted to AGENTS.md. This is how dharma grows.
