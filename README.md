@@ -14,6 +14,8 @@ docs/
   decisions/
     TEMPLATE.md            # ADR template for recording architectural decisions
     ADR-NNNN-*.md          # Individual decision records (append-only)
+  reflections/
+    YYYY-MM-DD-*.md        # Process insights and lessons learned
 ```
 
 ## Usage
@@ -27,5 +29,6 @@ docs/
 ## Design decisions
 
 - **No tooling, no dependencies.** This is plain markdown in a git repo. If it needs a build step, it's too complex.
-- **Principles over procedures.** The file tells agents *how to think*, not step-by-step what to do. Procedures belong in project-specific skills or documentation.
+- **Principles and practices.** Principles tell agents *how to think*. Practices compensate for structural limitations (amnesia, accretion bias, false confidence) with concrete habits. Both are necessary — principles without practices are aspirational; practices without principles are mechanical.
 - **Append-only history.** ADRs are never rewritten. If thinking evolves, a new record supersedes the old one. The chain of reasoning is the institutional memory.
+- **Reflections feed the principles.** The `docs/reflections/` directory is where raw insights accumulate. When a pattern recurs enough to become a principle, it gets promoted to AGENTS.md. This is how dharma grows organically.
