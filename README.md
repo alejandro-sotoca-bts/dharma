@@ -1,4 +1,4 @@
-# dharma
+# Dharma
 
 Canonical source of engineering principles and accumulated wisdom for AI-assisted development. The name refers to "the right way" — not rigid rules, but a path refined through practice and reflection.
 
