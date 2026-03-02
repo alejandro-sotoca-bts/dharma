@@ -17,7 +17,7 @@ This is not a ritual to follow rigidly. It is a habit to develop — a way of be
 
 ## Structure
 
-```
+```text
 AGENTS.md                  # Shared principles for human and agent
 docs/
   decisions/
@@ -30,7 +30,9 @@ docs/
 
 To apply dharma to your project, give your AI agent this message:
 
-> Read https://github.com/alejandro-sotoca-bts/dharma/blob/main/AGENTS.md and the reflections at https://github.com/alejandro-sotoca-bts/dharma/tree/main/docs/reflections to understand the reasoning behind the principles. Then adapt AGENTS.md to this project: keep the core principles intact, add project-specific guidelines (framework, language, doc links), and create a docs/decisions/ directory with the ADR template from the same repo.
+```text
+Read https://github.com/alejandro-sotoca-bts/dharma/blob/main/AGENTS.md and the reflections at https://github.com/alejandro-sotoca-bts/dharma/tree/main/docs/reflections to understand the reasoning behind the principles. Then adapt AGENTS.md to this project: keep the core principles intact, add project-specific guidelines (framework, language, doc links), and create a docs/decisions/ directory with the ADR template from the same repo.
+```
 
 That's it. The agent will read the principles, understand the project's stack, and produce an adapted AGENTS.md.
 
